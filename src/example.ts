@@ -1,11 +1,19 @@
-function addList(number: number[]): number{
-    var result: number = 0;
-    number.map((num) => {
-        result = result + num;
-    })
+// interface User {
+//   name: string;
+//   last_name: string;
+//   surname?: string;
+//   age: number | string;
+// }
 
-    return result
+// function userToJson(user: User): string {
+//   return JSON.stringify(user);
+// }
+
+function add(x: number | string, y: number | string) {
+    if (typeof x == 'string' && typeof y == 'string') {
+        return x.toString() + y.toString()
+    }
+    else if (typeof x =='number' && typeof y=="number") {
+        return x + y;
+    }
 }
-
-var list = [1, 4, 5, 6, 9]
-console.log(addList(list))
