@@ -16,20 +16,18 @@ let hobbies: string[];
 
 hobbies = ["Sports", "Cooking"];
 
-let person: {
+type Person = {
   name: string;
   age: number;
 };
 
+let person: Person;
 person = {
   name: "Max",
   age: 23,
 };
 
-let people: {
-  name: string;
-  age: number;
-}[];
+let people: Person[];
 
 //type interface
 let course: string | number = "React - The complete guide";
