@@ -78,4 +78,23 @@ class Student {
 }
 
 const student = new Student("Tharindu", "Madhushan", 25, ["WebDevelopment"]);
-student.enrol('React')
+student.enrol("React");
+
+//Interfaces
+interface Human {
+  vehicleType: string;
+  lastyear: number;
+
+  greet: () => void;
+}
+
+let max: Human;
+
+max = {
+  vehicleType: "wheel",
+    lastyear: 34,
+  
+    greet() {
+        console.log('hellow function')
+    }
+};
