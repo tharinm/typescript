@@ -44,15 +44,38 @@ add(5, 9);
 //   console.log(value);
 // }
 
-
 //Generics
 
-function insertAtBeginning<T>(array:T[],value:T) {
-    const newArray=[value,...array]
+function insertAtBeginning<T>(array: T[], value: T) {
+  const newArray = [value, ...array];
 }
 
-const demoArray = [1, 2, 3]
+const demoArray = [1, 2, 3];
 
-const updateAaaray = insertAtBeginning(demoArray, -1)
+const updateAaaray = insertAtBeginning(demoArray, -1);
 
-updateAaaray[0].split('')
+updateAaaray[0].split("");
+
+//Class
+
+class Student {
+  fname: string;
+  lname: string;
+  age: number;
+
+  course: string[];
+
+  constructor(first: string, last: string, age: number, course: string[]) {
+    this.fname = first;
+    this.lname = last;
+    this.age = age;
+    this.course = course;
+  }
+
+  enrol(courseName: string) {
+    this.course.push(courseName);
+  }
+}
+
+const student = new Student("Tharindu", "Madhushan", 25, ["WebDevelopment"]);
+student.enrol('React')
