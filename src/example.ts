@@ -40,6 +40,19 @@ function add(a: number, b: number): number | string {
 
 add(5, 9);
 
-function print(value: any) {
-  console.log(value);
+// function print(value: any) {
+//   console.log(value);
+// }
+
+
+//Generics
+
+function insertAtBeginning<T>(array:T[],value:T) {
+    const newArray=[value,...array]
 }
+
+const demoArray = [1, 2, 3]
+
+const updateAaaray = insertAtBeginning(demoArray, -1)
+
+updateAaaray[0].split('')
