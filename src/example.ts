@@ -30,3 +30,8 @@ let people: {
   name: string;
   age: number;
 }[];
+
+//type interface
+let course:string  = "React - The complete guide";
+
+course = "efefdf";
