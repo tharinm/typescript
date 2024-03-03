@@ -1,7 +1,11 @@
-function sum(a: number, b: number) {
-  return a + b;
-}
+//primmitive types
+let age: number
+age = 4
 
+let user: string
+user = 'John Doe'
 
-const result = sum(4, 5)
-console.log(result)
+let instructor: boolean
+instructor: true
+
+let hobby: null
