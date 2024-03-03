@@ -32,6 +32,6 @@ let people: {
 }[];
 
 //type interface
-let course:string  = "React - The complete guide";
+let course: string | number = "React - The complete guide";
 
-course = "efefdf";
+course = 333434;
