@@ -33,3 +33,13 @@ let people: Person[];
 let course: string | number = "React - The complete guide";
 
 course = 333434;
+
+function add(a: number, b: number): number | string {
+  return a + b;
+}
+
+add(5, 9);
+
+function print(value: any) {
+  console.log(value);
+}
